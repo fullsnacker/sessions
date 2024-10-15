@@ -32,10 +32,10 @@ export const Chat = () => {
 	return createPortal(
 		<div>
 			{
-				<div className="flex flex-col gap-4 m-auto max-w-4xl border border-gray-400 p-4 rounded-md">
+				<div className="flex flex-col gap-4 m-auto max-w-4xl border border-gray-400  p-4 rounded-md">
 					<div
 						ref={container}
-						className="flex flex-col gap-4 h-[800px] overflow-y-auto"
+						className="flex flex-col gap-4 h-[500px] overflow-y-auto"
 					>
 						{messages.map((message) => (
 							<div
@@ -58,7 +58,7 @@ export const Chat = () => {
 								setQuestion(event.target.value);
 							}}
 							placeholder="Mensaje"
-							className="flex-1 border border-gray-400 py-2 px-4 rounded-r-none"
+							className="flex-1 border border-gray-400 py-2 px-4 rounded-r-none max-w-[60%]"
 							type="text"
 							name="question"
 						/>
